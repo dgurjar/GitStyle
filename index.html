@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>gitStyle</title>
+        <script src="lib/sh/scripts/shCore.js" type="text/javascript"></script>
+        <script src="lib/sh/scripts/shBrushCpp.js" type="text/javascript"></script>
+        <script src="lib/sh/scripts/shBrushJava.js" type="text/javascript"></script>
+        <script src="lib/sh/scripts/shBrushJScript.js" type="text/javascript"></script>
+        <script src="lib/sh/scripts/shBrushPython.js" type="text/javascript"></script>
+        <script src="lib/sh/scripts/shBrushScala.js" type="text/javascript"></script>
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="/Users/dev/Desktop/gitStyle/lib/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.js"></script>
+        <script src="lib/gh3-master/vendors/underscore.js"></script>
+        <script src="lib/gh3-master/gh3.js" type="text/javascript"></script>
+        <script src="styler.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="style.css" type="text/css"></link>
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+        <div id = "options">
+            <div id="title"><h1>gitStyle</h1></div>
+            <form id="url-form" onsubmit="return update()">
+                <label for="url">Enter a url to a GitHub file</label>
+                <input id="url" name="url" type="text" placeholder="https://github.com/dgurjar/Poseidon/blob/master/index.html"/>
+            </form>
+            <div id="selectors">
+                <div class="comment sel" id ="sel_com">comments</div>
+                <div class="match sel" id="sel_match">syntax matches</div>
+                <div class="neg sel" id="sel_neg">negative space</div>
+            </div>
+                <div class="zoom" id="plus">zoom in</div>
+                <div class="zoom" id="minus">zoom out</div>
+        </div>
+    </body>
+</html>
